@@ -13,19 +13,20 @@ Repo for Pre-Cosyne brainhack 2025 project "Create notebooks importing published
    - [BrainScore](https://www.brain-score.org/tutorials/models/quickstart)
    - [HuggingFace](https://huggingface.co/models?pipeline_tag=image-classification&sort=trending)
    - [RobustBench](https://github.com/RobustBench/robustbench?tab=readme-ov-file#model-zoo-quick-tour)
-2. Document how to use their models with plenoptic. See `plenoptic-minimal-example.ipynb` to see the minimal steps we want to be able to recreate.
+2. Document how to use their models with plenoptic. See `plenoptic-example.ipynb` to see the minimal steps we want to be able to recreate.
+3. Document how to use [torchvision feature extractor](https://pytorch.org/vision/stable/feature_extraction.html) with plenoptic. (Since generally, researchers are interested in intermediate representations or representations from multiple stages.)
 3. Find specific interesting / relevant models from each model zoo, with citations.
 4. Bonus ideas:
     - Write a function that uses the brainscore API to get the current Nth best neural models for specific brain areas and prepares it for plenoptic.
-    - Use plenoptic's `Metamer` class to perform style transfer as in Gatys et al. 2015 (which used VGG-19).
-    - Use plenotic's `MADCompetition` class to compare against among brainscore's top models for different brain areas, or between the best neural and behavioral models.
+    - Use plenoptic's `Metamer` class to perform style transfer as in Gatys et al. 2015 (which used VGG-19). ([2015](https://arxiv.org/abs/1508.06576), [2016](https://www.cv-foundation.org/openaccess/content_cvpr_2016/html/Gatys_Image_Style_Transfer_CVPR_2016_paper.html) papers)
+    - Use plenotic's `MADCompetition` class to compare against among brainscore's top models for different brain areas, or between the best neural and behavioral models. (Relevant documentation: [1](https://docs.plenoptic.org/docs/branch/main/tutorials/intro/07_Simple_MAD.html), [2](https://docs.plenoptic.org/docs/branch/main/tutorials/intro/08_MAD_Competition.html).
 
 ## Setup 
 
 - Give Billy your github username so you can be given write access to this repo.
 - Follow the instructions below to create your environment or login to the binder.
 - If local, you will need to clone this git repo; the binder instance already has a cloned copy.
-- Look at the `plenoptic-example.ipynb` notebook, to see a small example of how to use plenoptic, and the steps we'll want to be able to perform with the new models.
+- Look at the `plenoptic-example.ipynb` notebook, to see a small example of how to use plenoptic, and the steps we'll want to be able to perform with the new models. Please don't push any changes to this file!
 - Work in a jupyter notebook in the root directory of this repo, and make sure to push to origin before you leave!
 
 ### Local

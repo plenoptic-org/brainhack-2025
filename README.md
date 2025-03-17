@@ -14,11 +14,11 @@ Repo for Pre-Cosyne brainhack 2025 project "Create notebooks importing published
    - [HuggingFace](https://huggingface.co/models?pipeline_tag=image-classification&sort=trending)
    - [RobustBench](https://github.com/RobustBench/robustbench?tab=readme-ov-file#model-zoo-quick-tour)
 2. Document how to use their models with plenoptic. See `plenoptic-example.ipynb` to see the minimal steps we want to be able to recreate.
-3. Document how to use [torchvision feature extractor](https://pytorch.org/vision/stable/feature_extraction.html) with plenoptic. (Since generally, researchers are interested in intermediate representations or representations from multiple stages.)
-3. Find specific interesting / relevant models from each model zoo, with citations.
+3. Document how to use [torchvision feature extractor](https://pytorch.org/vision/stable/feature_extraction.html) with plenoptic. (Since generally, researchers are interested in intermediate representations or representations from multiple layers.)
+3. Find specific interesting / relevant models (and layers) from each model zoo, with citations.
 4. Bonus ideas:
     - Write a function that uses the brainscore API to get the current Nth best neural models for specific brain areas and prepares it for plenoptic.
-    - Use plenoptic's `Metamer` class to perform style transfer as in Gatys et al. 2015 (which used VGG-19). ([2015](https://arxiv.org/abs/1508.06576), [2016](https://www.cv-foundation.org/openaccess/content_cvpr_2016/html/Gatys_Image_Style_Transfer_CVPR_2016_paper.html) papers)
+    - Use plenoptic's `Metamer` class to perform style transfer as in Gatys et al. 2015 (which used VGG-19). ([2015](https://arxiv.org/abs/1508.06576), [2016](https://www.cv-foundation.org/openaccess/content_cvpr_2016/html/Gatys_Image_Style_Transfer_CVPR_2016_paper.html) papers).
     - Use plenotic's `MADCompetition` class to compare against among brainscore's top models for different brain areas, or between the best neural and behavioral models. (Relevant documentation: [1](https://docs.plenoptic.org/docs/branch/main/tutorials/intro/07_Simple_MAD.html), [2](https://docs.plenoptic.org/docs/branch/main/tutorials/intro/08_MAD_Competition.html).
 
 ## Setup 

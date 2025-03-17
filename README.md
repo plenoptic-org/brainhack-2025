@@ -25,7 +25,7 @@ Repo for Pre-Cosyne brainhack 2025 project "Create notebooks importing published
 - Give Billy your github username so you can be given write access to this repo.
 - Follow the instructions below to create your environment or login to the binder.
 - If local, you will need to clone this git repo; the binder instance already has a cloned copy.
-- Look at the `plenoptic-minimal-example.ipynb` notebook, to see a small example of how to use plenoptic, and the steps we'll want to be able to perform with the new models.
+- Look at the `plenoptic-example.ipynb` notebook, to see a small example of how to use plenoptic, and the steps we'll want to be able to perform with the new models.
 - Work in a jupyter notebook in the root directory of this repo, and make sure to push to origin before you leave!
 
 ### Local

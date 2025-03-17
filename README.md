@@ -13,7 +13,7 @@ Repo for Pre-Cosyne brainhack 2025 project "Create notebooks importing published
    - [BrainScore](https://www.brain-score.org/tutorials/models/quickstart)
    - [HuggingFace](https://huggingface.co/models?pipeline_tag=image-classification&sort=trending)
    - [RobustBench](https://github.com/RobustBench/robustbench?tab=readme-ov-file#model-zoo-quick-tour)
-2. Document how to use their models with plenoptic. See `plenoptic-minimal-example.ipynb` to see the minimal steps we want to be able to recreate.
+2. Document how to use their models with plenoptic. See `plenoptic-example.ipynb` to see the minimal steps we want to be able to recreate.
 3. Find specific interesting / relevant models from each model zoo, with citations.
 4. Bonus ideas:
     - Write a function that uses the brainscore API to get the current Nth best neural models for specific brain areas and prepares it for plenoptic.

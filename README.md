@@ -20,6 +20,7 @@ Repo for Pre-Cosyne brainhack 2025 project "Create notebooks importing published
     - Write a function that uses the brainscore API to get the current Nth best neural models for specific brain areas and prepares it for plenoptic.
     - Use plenoptic's `Metamer` class to perform style transfer as in Gatys et al. 2015 (which used VGG-19). ([2015](https://arxiv.org/abs/1508.06576), [2016](https://www.cv-foundation.org/openaccess/content_cvpr_2016/html/Gatys_Image_Style_Transfer_CVPR_2016_paper.html) papers).
     - Use plenotic's `MADCompetition` class to compare against among brainscore's top models for different brain areas, or between the best neural and behavioral models. (Relevant documentation: [1](https://docs.plenoptic.org/docs/branch/main/tutorials/intro/07_Simple_MAD.html), [2](https://docs.plenoptic.org/docs/branch/main/tutorials/intro/08_MAD_Competition.html).
+    - Use plenoptic's `MADCompetition` class to generate adversarial examples, maximizing the error in an image classification network's output layer while keeping MSE at some minimal level.
 
 ## Setup 
 

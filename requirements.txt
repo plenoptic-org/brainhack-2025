@@ -1,4 +1,6 @@
 plenoptic==1.1
+# breaking change for plenoptic 1.1 in torch 2.6 (fixed in next plenoptic version)
+torch==2.5
 jupytext
 jupyterlab_myst
 jupyter

@@ -11,8 +11,8 @@ def hf_demo(iterations=100):
     # Load from Huggingface Hub
     model = timm.create_model("hf-hub:nateraw/resnet50-oxford-iiit-pet", pretrained=True)
     
-    # Set model to eval mode for inference
-    model.eval()
+    # # Set model to eval mode for inference
+    # model.eval()
     
     # Create Transform
     transform = create_transform(**resolve_data_config(model.pretrained_cfg, model=model))
@@ -28,8 +28,9 @@ def hf_demo(iterations=100):
     # po.imshow(img_resnet_ready); #224 x 224
 
     train_nodes, eval_nodes = get_graph_node_names(model)
-    # print(eval_nodes) #list layer names
+        # print(eval_nodes) #list layer names
+
     test_model = TorchInterface(model, "layer2", transform)
-    test_model.to(0);
+    test_model.to(0)
     showcaseInterface(iterations, test_model, img, (1, 3, 224, 224))
 

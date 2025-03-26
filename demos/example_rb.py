@@ -11,8 +11,10 @@ def rb_demo(iterations=100):
     
     img = po.data.einstein(as_gray=False).to(0)
     train_nodes, eval_nodes = get_graph_node_names(model)
+        # eval_nodes[:20]
 
-    # eval_nodes[:20]
     test_model = TorchInterface(model, "layer.2.block.14.conv_1")
     test_model = TorchInterface(model, "layer.0.block.1.batchnorm")
+    test_model.to(0)
+
     showcaseInterface(iterations, test_model, img)

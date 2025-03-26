@@ -17,4 +17,4 @@ def rb_demo(iterations=100):
     test_model = TorchInterface(model, "layer.0.block.1.batchnorm")
     test_model.to(0)
 
-    showcaseInterface(iterations, test_model, img)
+    showcaseInterface(iterations, test_model, img, None)
